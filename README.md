@@ -1,2 +1,2 @@
 # slideshow
-proyecto de prueba
+my proyect
