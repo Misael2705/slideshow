@@ -8,9 +8,7 @@ var p = {
     item: 0,
     cajaSlide: document.querySelector("#slide ul"),
     animacionSlide: "slide",
-    imgSlide: document.querySelectorAll("#slide ul li"),
-    avanzar: document.querySelector("#slide #avanzar"),
-    retroceder: document.querySelector("#slide #retroceder")
+    imgSlide: document.querySelectorAll("#slide ul li")
 
 }
 
@@ -27,10 +25,6 @@ var m = {
             p.paginacion[i].addEventListener("click", m.paginacionSlide)
 
         }
-
-        p.avanzar.addEventListener("click", m.avanzar)
-        p.retroceder.addEventListener("click", m.retroceder)
-
     },
 
     paginacionSlide: function (item) {
@@ -38,14 +32,6 @@ var m = {
         p.item = item.currentTarget.getAttribute('data-item') -1;
 
         m.movimientoSlide(p.item);
-
-    },
-
-    avanzar: function(){
-
-    },
-
-    retroceder: function(){
 
     },
 
