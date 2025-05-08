@@ -10,9 +10,7 @@ var p = {
     animacionSlide: "slide",
     imgSlide: document.querySelectorAll("#slide ul li"),
     avanzar: document.querySelector("#slide #avanzar"),
-    retroceder: document.querySelector("#slide #retroceder"),
-    velocidadSlide: 3000,
-    formatearLoop: false
+    retroceder: document.querySelector("#slide #retroceder")
 
 }
 
@@ -33,7 +31,6 @@ var m = {
         p.avanzar.addEventListener("click", m.avanzar)
         p.retroceder.addEventListener("click", m.retroceder)
 
-        m.intervalo();
 
     },
 
@@ -81,8 +78,6 @@ var m = {
 
     movimientoSlide: function (item) {
 
-        p.formatearLoop = true;
-
         p.cajaSlide.style.left = item * -100 + "%";
         
         for (var i = 0; i < p.paginacion.length; i++) {
@@ -120,16 +115,6 @@ var m = {
         }
 
         
-    },
-
-    intervalo: function() {
-
-        setInterval( function(){
-
-            m.avanzar();
-
-        }, p.velocidadSlide);
-
     }
 
 }
