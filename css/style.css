@@ -65,7 +65,7 @@ SLIDESHOW
 	left:0%;
 	margin:auto;
 	height:auto;
-	width:400%;
+	/*width:400%;*/
 	clear:both;
 	display: table;
 }
@@ -73,7 +73,7 @@ SLIDESHOW
 #slide ul li{
 	position: relative;
 	float:left;
-	width:25%;
+	/*width:25%;*/
 }	
 
 #slide ul li img{
@@ -139,6 +139,35 @@ SLIDESHOW
 #slide ul li .textoSlide h3{
 	background: rgba(0,0,0,.5);
 	padding-bottom:10px;
+}
+
+/*=============================================
+GALERIA
+=============================================*/
+
+#galeria {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+#galeria ul {
+	padding: 20px;
+}
+
+#galeria ul li {
+	padding: 10px;
+	cursor: pointer;
+	/*trasition:.6s; */
+}
+
+#galeria ul li:hover {
+	transition: .6s;
+	opacity: .6;
+}
+
+#galeria ul li img {
+	width: 100%;
 }
 
 /*=============================================
