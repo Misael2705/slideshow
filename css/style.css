@@ -170,6 +170,10 @@ GALERIA
 	width: 100%;
 }
 
+.cerrar {
+display: flex;
+justify-content: center;
+}
 /*=============================================
 PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 =============================================*/
